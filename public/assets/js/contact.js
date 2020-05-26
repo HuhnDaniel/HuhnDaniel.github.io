@@ -20,6 +20,7 @@ const handleMessageSave = function() {
         return console.log("Pease fill out all fields");
     }
 
+    // Saves input field info to a new object
     const newMessage = {
         name: nameInput.val(),
         email: emailInput.val(),
@@ -27,9 +28,17 @@ const handleMessageSave = function() {
         message: messageInput.val()
     };
 
+    // Save message to json file then clear inputs
     saveMessage(newMessage).then((data) => {
         console.log("Message sent");
+
+        // Clears all input fields
+        nameInput.val("");
+        emailInput.val("");
+        topicInput.val("");
+        messageInput.val("");
     });
+
 }
 
 messageForm.on("submit", handleMessageSave);
