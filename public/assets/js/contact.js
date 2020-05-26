@@ -14,6 +14,12 @@ const saveMessage = function(message) {
 }
 
 const handleMessageSave = function() {
+    event.preventDefault();
+
+    if (!nameInput.val() || !emailInput.val() || !topicInput.val() || !messageInput.val()) {
+        return console.log("Pease fill out all fields");
+    }
+
     const newMessage = {
         name: nameInput.val(),
         email: emailInput.val(),
@@ -22,7 +28,7 @@ const handleMessageSave = function() {
     };
 
     saveMessage(newMessage).then((data) => {
-        console.log(data);
+        console.log("Message sent");
     });
 }
 
