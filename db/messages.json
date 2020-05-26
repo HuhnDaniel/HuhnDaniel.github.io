@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "name": "Bob",
+    "about": "Things",
+    "body": "Hey dude, stuff",
+    "id": 1
+  }
+]

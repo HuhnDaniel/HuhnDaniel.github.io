@@ -7,4 +7,25 @@ router.get("/portfolio", (req, res) => {
     res.json(portfolioData);
 });
 
+router.get("/messages", (req, res) => {
+    res.json(messagesData);
+})
+.post("/messages", (req, res) => {
+    messagesData.forEach(message => {
+        message.id++;
+    });
+
+    const newMessage = req.body;
+    newMessage.id = 1;
+    messagesData.unshift(newMessage);
+
+    fs.writeFile("./db/messages.json", JSON.stringify(messagesData, null, 2), err => {
+        if (err) throw err;
+
+        console.log("File saved");
+    });
+
+    res.end();
+});
+
 module.exports = router;
