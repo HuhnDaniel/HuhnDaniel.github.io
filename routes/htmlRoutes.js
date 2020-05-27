@@ -1,15 +1,15 @@
 const router = require("express").Router();
 const path = require("path");
 
-router.get("/contact", (req, res) => {
+router.get("/contact", (_, res) => {
     res.sendFile(path.join(__dirname, "../public/contact.html"));
 });
 
-router.get("/portfolio", (req, res) => {
+router.get("/portfolio", (_, res) => {
     res.sendFile(path.join(__dirname, "../public/portfolio.html"));
 });
 
-router.get("*", (req, res) => {
+router.get("*", (_, res) => {
     res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 

@@ -5,7 +5,7 @@ const messageInput = $("#messageInput");
 const submitBtn = $("#submitBtn");
 const messageForm = $("#messageForm");
 
-const saveMessage = function(message) {
+const saveMessage = (message) => {
     return $.ajax({
         url: "./api/messages",
         data: message,
@@ -13,7 +13,7 @@ const saveMessage = function(message) {
     });
 }
 
-const handleMessageSave = function() {
+const handleMessageSave = () => {
     event.preventDefault();
 
     if (!nameInput.val() || !emailInput.val() || !topicInput.val() || !messageInput.val()) {
@@ -29,7 +29,7 @@ const handleMessageSave = function() {
     };
 
     // Save message to json file then clear inputs
-    saveMessage(newMessage).then((data) => {
+    saveMessage(newMessage).then(() => {
         console.log("Message sent");
 
         // Clears all input fields
@@ -38,7 +38,6 @@ const handleMessageSave = function() {
         topicInput.val("");
         messageInput.val("");
     });
-
 }
 
 messageForm.on("submit", handleMessageSave);

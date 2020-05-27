@@ -3,11 +3,11 @@ const portfolioData = require("../db/portfolio.json");
 const router = require("express").Router();
 const fs = require("fs");
 
-router.get("/portfolio", (req, res) => {
+router.get("/portfolio", (_, res) => {
     res.json(portfolioData);
 });
 
-router.get("/messages", (req, res) => {
+router.get("/messages", (_, res) => {
     res.json(messagesData);
 })
 .post("/messages", (req, res) => {
