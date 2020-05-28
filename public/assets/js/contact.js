@@ -17,7 +17,10 @@ const handleMessageSave = () => {
     event.preventDefault();
 
     if (!nameInput.val() || !emailInput.val() || !topicInput.val() || !messageInput.val()) {
-        $("#messageForm").before($("<h5>").text("Please fill out all fields.").addClass("m-4 p-1 w-25 text-center rounded text-white bg-warning"));
+        $("#messageForm").before(
+            $("<h5>").text("Please fill out all fields.")
+                .addClass("m-4 p-1 w-25 text-center rounded text-white bg-warning")
+                .attr("id", "alertModal"));
         return;
     }
 
@@ -31,7 +34,10 @@ const handleMessageSave = () => {
 
     // Save message to json file then clear inputs
     saveMessage(newMessage).then(() => {
-        console.log("Message sent");
+        submitBtn.before(
+            $("<h5>").text("Message sent!")
+                .addClass("mb-3 p-1 w-25 text-center rounded text-white bg-success")
+                .attr("id", "successModal"));
 
         // Clears all input fields
         nameInput.val("");
@@ -39,6 +45,9 @@ const handleMessageSave = () => {
         topicInput.val("");
         messageInput.val("");
     });
+    // setTimeout(() => {
+
+    // })
 }
 
 messageForm.on("submit", handleMessageSave);
