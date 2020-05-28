@@ -1,7 +1,7 @@
 {
   "name": "huhndaniel.github.io",
   "version": "2.0.0",
-  "description": "Personalized Bio, images, and links about myself",
+  "description": "Personalized bio, images, and links about myself",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/HuhnDaniel/HuhnDaniel.github.io#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

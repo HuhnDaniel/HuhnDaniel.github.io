@@ -1,8 +1,12 @@
 # responsive-portfolio
-## About this project
-- Utilizes the Bootstrap CSS Framework
-- Multiple pages with working links in a consistent nav bar
-- Responsive layout and images for different sized devices
-- Personalized Bio, images, and links about myself
+![GitHub repo size](https://img.shields.io/github/repo-size/HuhnDaniel/huhndaniel.github.io)  
+Personalized gio, images, and links about myself.
+## Table of Contents
+- [Author](#author)
+- [Questions](#questions)
 ## Author
-- Daniel Moody-Huhn: https://github.com/HuhnDaniel
+Daniel Moody-Huhn:
+- https://github.com/HuhnDaniel/
+- https://huhndaniel.github.io/
+## Questions
+If you have any questions, please open an issue or contact me through my github.io site
