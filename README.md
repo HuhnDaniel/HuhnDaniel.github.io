@@ -9,4 +9,4 @@ Daniel Moody-Huhn:
 - https://github.com/HuhnDaniel/
 - https://huhndaniel.github.io/
 ## Questions
-If you have any questions, please open an issue or contact me through my github.io site
+If you have any questions, please open an issue or contact me through my huhndaniel.github.io site.

@@ -17,7 +17,8 @@ const handleMessageSave = () => {
     event.preventDefault();
 
     if (!nameInput.val() || !emailInput.val() || !topicInput.val() || !messageInput.val()) {
-        return console.log("Pease fill out all fields");
+        $("#messageForm").before($("<h5>").text("Please fill out all fields.").addClass("m-4 p-1 w-25 text-center rounded text-white bg-warning"));
+        return;
     }
 
     // Saves input field info to a new object
