@@ -16,6 +16,13 @@ const saveMessage = (message) => {
 const handleMessageSave = () => {
     event.preventDefault();
 
+    if ($("#alertModal")) {
+        $("#alertModal").remove();
+    }
+    if ($("#successModal")) {
+        $("#successModal").remove();
+    }
+
     if (!nameInput.val() || !emailInput.val() || !topicInput.val() || !messageInput.val()) {
         $("#messageForm").before(
             $("<h5>").text("Please fill out all fields.")
