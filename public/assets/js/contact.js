@@ -52,9 +52,9 @@ const handleMessageSave = () => {
         topicInput.val("");
         messageInput.val("");
     });
-    // setTimeout(() => {
-
-    // })
+    setTimeout(() => {
+        $("#successModal").remove();
+    }, 3000);
 }
 
 messageForm.on("submit", handleMessageSave);
