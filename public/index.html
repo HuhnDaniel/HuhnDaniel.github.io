@@ -3,51 +3,36 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-	<title>About Me</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+	<title>Daniel Moody-Huhn</title>
 </head>
-<body class="bg-dark mb-5 pb-5">
+<body>
+    <header class="head">
+        <h1 class="title">Daniel Moody-Huhn</h1>
+    </header>
 
-	<div class="container-fluid">
-		<header class="row text-center bg-white"> <!--Header bar-->
-			<h1 class="col-md-auto mb-0 ml-md-4 bg-info text-white p-3">Daniel Moody-Huhn</h1> <!--Name section-->
+    <main class="wrapper">
+        <section class="info-block" id="about">
+            <h2><a href="#about" class="info-head">About Me</a></h2>
+            <img src="assets/images/profilepic.jpg" class="profile-pic" alt="Profile picture">
+            <p class="info-text">
+                As a full-stack web developer, I use experience with multiple technologies to create
+                intentional and engaging sites and applications.  Previous experience in leadership
+                roles provide me with strong teamwork and communication skills necessary for working
+                well in a group.  I pride myself in my sense of initiative for learning, my work eithic,
+                and my ability to finish projects on time.
+            </p>
+        </section>
+        <section class="info-block" id="portfolio">
+            <h2><a href="#portfolio" class="info-head">Portfolio</a></h2>
+        </section>
+        <section class="info-block" id="contact">
+            <h2><a href="#contact" class="info-head">Contact Me</a></h2>
+        </section>
+    </main>
 
-			<section class="col-md-auto mr-md-4 ml-auto"> <!--Wrapper for nav buttons-->
-				<nav class="row">
-					<button class="btn col-4 mt-4 btn-light"><a href="./">About</a></button>
-					<button class="btn col-4 mt-4 btn-light"><a href="./portfolio">Portfolio</a></button>
-					<button class="btn col-4 mt-4 btn-light"><a href="./contact">Contact</a></button>
-				</nav>
-			</section>
-		</header>
-	</div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
-	<div class="container">
-		<main class="row justify-content-start mt-3 mx-1 p-2"> <!--Wrapper for main content-->
-			<div class="col-md-12 bg-white">
-				<h1 class="row text-info m-4">About Me</h1> <!--Main content title-->
-				<hr />
-
-				<section class="row my-4 mx-2"> <!--Wrapper for profile-->
-						<figure class="col-sm-12 col-md-6"> <!--Bio pic and info-->
-							<img src="./assets/images/profilepic.jpg" alt="Profile picture" class="img-fluid">
-						</figure>
-						<article class="col-md-6">
-							I currently work at FedEx Ground, loading and unloading trailers, although my hobby and desired area of work is in coding. 
-							I enjoy web development and would like to get into software development as well at some point.  Experiences at work and in my life 
-							have given me strong interpersonal, leadership, and work ethic skills.  On my own I like to spend time with 
-							my wife, cook from scratch (I cook all my own meals), PC game, and code.  
-						</article>
-				</section>
-			</div>
-		</main>
-	</div>
-
-	<div class="container-fluid">
-		<footer class="row fixed-bottom text-center bg-info"> <!--Footer bar-->
-			<h6 class="col-12 bg-light p-3 mt-3 mb-0">&copy;Copyright</h2>
-		</footer>
-	</div>
-	
 </body>
 </html>

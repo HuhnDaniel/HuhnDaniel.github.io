@@ -1,0 +1,61 @@
+html {
+    color: navy;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(214,214,214);
+    background: linear-gradient(141deg, rgba(214,214,214,1) 0%, rgba(163,163,163,1) 100%);
+}
+
+.title {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 0 1rem;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-head {
+    text-decoration: none;
+    font-size: 1.75rem;
+    color: navy;
+}
+
+#about {
+    align-self: flex-end;
+    align-items: flex-end;
+    min-height: 80vh;
+}
+
+.profile-pic {
+    width: 100%;
+}
+
+.info-text {
+    text-align: justify;
+    font-size: 1.25em;
+    width: 85%;
+    line-height: 1.25;
+    margin-bottom: 0;
+}
+
+#portfolio {
+    align-self: flex-start;
+    min-height: 90vh;
+    text-align: left;
+}
+
+#contact {
+    align-self: flex-end;
+    min-height: 100vh;
+    text-align: right;
+}
