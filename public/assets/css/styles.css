@@ -1,15 +1,15 @@
 html {
-    color: navy;
+    color: #10375d;
     scroll-behavior: smooth;
 }
 
 body {
-    background: rgb(214,214,214);
-    background: linear-gradient(141deg, rgba(214,214,214,1) 0%, rgba(163,163,163,1) 100%);
+    background: #e0e2d5;
+    /* background: linear-gradient(141deg, rgba(214,214,214,1) 0%, rgba(163,163,163,1) 100%); */
 }
 
 .title {
-    margin: 1rem;
+    margin: 1rem 1rem 0 1rem;
     font-size: 2rem;
 }
 
@@ -20,20 +20,28 @@ body {
 }
 
 .info-block {
+    margin: 1rem 0 1rem 0;
     display: flex;
     flex-direction: column;
+    background-color: #6db8bb88;
+    width: 100%;
+}
+
+h2 {
+    margin: 1rem;
 }
 
 .info-head {
     text-decoration: none;
     font-size: 1.75rem;
-    color: navy;
+    color: #10375d;
 }
 
 #about {
     align-self: flex-end;
     align-items: flex-end;
     min-height: 80vh;
+    box-shadow: .25rem .25rem .25rem .5rem #6db8bb88;
 }
 
 .profile-pic {
@@ -42,20 +50,49 @@ body {
 
 .info-text {
     text-align: justify;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     width: 85%;
     line-height: 1.25;
-    margin-bottom: 0;
+    margin: 0 1rem;
 }
 
 #portfolio {
     align-self: flex-start;
     min-height: 90vh;
     text-align: left;
+    box-shadow: -.25rem .25rem .25rem .5rem #6db8bb88;
+}
+
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+figure {
+    margin: 0 1rem 0 1rem;
+}
+
+.project {
+    margin-bottom: 1rem;
+}
+
+.project-logo {
+    width: 100%;
+}
+
+.project-text {
+    text-align: justify;
+    font-size: 1rem;
+    width: 85%;
+    line-height: 1.25;
+    margin: 0 1rem;
 }
 
 #contact {
     align-self: flex-end;
     min-height: 100vh;
     text-align: right;
+    box-shadow: .25rem .25rem .25rem .5rem #6db8bb88;
 }
