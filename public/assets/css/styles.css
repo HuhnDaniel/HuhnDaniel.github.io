@@ -63,19 +63,18 @@ h2 {
     box-shadow: -.25rem .25rem .25rem .5rem #6db8bb88;
 }
 
-.project-wrapper {
+.inner-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: flex-start;
+}
+
+.project {
+    margin-bottom: 2rem;
 }
 
 figure {
     margin: 0 1rem 0 1rem;
-}
-
-.project {
-    margin-bottom: 1rem;
 }
 
 .project-logo {
@@ -90,9 +89,31 @@ figure {
     margin: 0 1rem;
 }
 
+.project-link {
+    text-decoration: none;
+}
+
 #contact {
     align-self: flex-end;
     min-height: 100vh;
     text-align: right;
     box-shadow: .25rem .25rem .25rem .5rem #6db8bb88;
+}
+
+.resources {
+    margin: 0 0 0 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.resource-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 .5rem .5rem .5rem;
+    flex: 1;
+}
+
+.resource-logo {
+    width: 100%;
 }
