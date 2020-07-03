@@ -22,7 +22,7 @@
             <p class="info-text">
                 As a full-stack web developer, I use experience with multiple technologies to create
                 intentional and engaging sites and applications.  Previous experience in leadership
-                roles provide me with strong teamwork and communication skills necessary for working
+                roles provides me with strong teamwork and communication skills necessary for working
                 well in a group.  I pride myself in my sense of initiative for learning, my work eithic,
                 and my ability to finish projects on time.
             </p>
@@ -31,58 +31,61 @@
         <section class="info-block" id="portfolio">
             <h2><a href="#portfolio" class="info-head">Portfolio</a></h2>
 
-            <div class="project-wrapper">
-                <article class="project">
-                    <figure>
-                        <a href="https://huhndaniel.github.io/campsite-finder/" target="_blank">
-                            <img class="project-logo" src="assets/images/campsite-finder-logo.png" alt="Campsite Finder link" />
-                        </a>
-                    </figure>
+            <article class="project">
+                <figure>
+                    <a href="https://huhndaniel.github.io/campsite-finder/" target="_blank">
+                        <img class="project-logo" src="assets/images/campsite-finder-logo.png" alt="Campsite Finder link" />
+                    </a>
+                </figure>
 
-                    <p class="project-text">Click the logo to view the finished project, or click <a href="https://github.com/HuhnDaniel/campsite-finder/tree/master" class="project-link" target="_blank">here to view the Github repository.</a></p>
-                </article>
+                <p class="project-text">Click the logo to view the finished project, or click <a href="https://github.com/HuhnDaniel/campsite-finder/tree/master" class="project-link" target="_blank">here to view the Github repository.</a></p>
+            </article>
 
-                <article class="project">
-                    <figure>
-                        <a href="https://project-boolean.herokuapp.com/" target="_blank">
-                            <img class="project-logo" src="assets/images/project-boolean-logo.png" alt="Project Boolean link" />
-                        </a>
-                    </figure>
+            <article class="project">
+                <figure>
+                    <a href="https://project-boolean.herokuapp.com/" target="_blank">
+                        <img class="project-logo" src="assets/images/project-boolean-logo.png" alt="Project Boolean link" />
+                    </a>
+                </figure>
 
-                    <p class="project-text">Click the logo to view the finished project, or click <a href="https://github.com/HuhnDaniel/campsite-finder/tree/master" class="project-link" target="_blank">here to view the Github repository.</a></p>
-                </article>
-            </div>
+                <p class="project-text">Click the logo to view the finished project, or click <a href="https://github.com/HuhnDaniel/campsite-finder/tree/master" class="project-link" target="_blank">here to view the Github repository.</a></p>
+            </article>
         </section>
 
         <section class="info-block" id="contact">
             <h2><a href="#contact" class="info-head">Contact Me</a></h2>
 
-            <div class="inner-wrapper">
-                <article class="resources">
-                    <a href="https://www.linkedin.com/in/danielmoody-huhn/" target="_blank" class="resource-link">
-                        <img class="resource-logo" id="linkedin-logo" src="assets/images/LI-Logo.png" alt="Linkedn link" />
-                    </a>
-                    <a href="https://github.com/HuhnDaniel" target="_blank" class="resource-link">
-                        <img class="resource-logo" id="github-logo" src="assets/images/GitHub_Logo.png" alt="GitHub link" />
-                    </a>
-                </article>
+            <h3>Find me on</h3>
+            <article class="resources">
+                <a href="https://www.linkedin.com/in/danielmoody-huhn/" target="_blank" class="resource-link">
+                    <img class="resource-logo" id="linkedin-logo" src="assets/images/LI-Logo.png" alt="Linkedn link" />
+                </a>
+                <a href="https://github.com/HuhnDaniel" target="_blank" class="resource-link">
+                    <img class="resource-logo" id="github-logo" src="assets/images/GitHub_Logo.png" alt="GitHub link" />
+                </a>
+            </article>
 
-                <form class="contact-form"> <!--Contact form section-->
-                    <label for="nameInput">Name</label>
-                    <input type="text" class="contact-text" id="nameInput" placeholder="John Smith" /> <!--Name input-->
+            <h3>Email me </h3>
+            <p class="email-link">At <a href="mailto:danielphuhn@gmail.com">danielphuhn@gmail.com</a></p>
+
+            <h3>Message me directly</h3>
+            <form class="contact-form">
+                <div class="inputs">
+                    <label for="name-input">Name</label>
+                    <input type="text" class="contact-text" id="name-input" placeholder="John Smith" />
+                        
+                    <label for="email-input">Email</label>
+                    <input type="email" class="contact-text" id="email-input" placeholder="example@gmail.com"/>
+                        
+                    <label for="topic-input">Topic</label>
+                    <input type="text" class="contact-text" id="topic-input">
+                        
+                    <label for="message-input">Message</label>
+                    <textarea class="contact-text" id="message-input" rows="5"></textarea>
+                </div>
                     
-                    <label for="emailInput">Email</label>
-                    <input type="email" class="contact-text" id="emailInput" placeholder="example@gmail.com"/> <!--Email input-->
-                    
-                    <label for="topicInput">Topic</label>
-                    <input type="text" class="contact-text" id="topicInput"> <!--Topic input-->
-                    
-                    <label for="messageInput">Message</label>
-                    <textarea class="contact-text" id="messageInput" rows="5"></textarea> <!--Message input-->
-                    
-                    <button type="submit" class="submitBtn">Submit</button> <!--Submit button-->
-                </form>
-            </div>
+                <button type="submit" class="actionBtn" id="submitBtn">Submit</button>
+            </form>
         </section>
     </main>
 
