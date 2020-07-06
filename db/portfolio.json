@@ -1,9 +1,0 @@
-[
-    {
-        "name": "Campsite Finder",
-        "description": "A website to help users find a campsite based on search by city, state, campsite name, or proximity to the user.",
-        "version": "1.0.0",
-        "URL": "https://huhndaniel.github.io/campsite-finder/",
-        "githubRepository": "https://github.com/HuhnDaniel/campsite-finder"
-    }
-]

@@ -1,6 +1,6 @@
 # responsive-portfolio
 ![GitHub repo size](https://img.shields.io/github/repo-size/HuhnDaniel/huhndaniel.github.io)  
-Personalized gio, images, and links about myself.
+Personalized bio, images, and links about myself.
 ## Table of Contents
 - [Author](#author)
 - [Questions](#questions)
