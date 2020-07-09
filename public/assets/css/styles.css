@@ -3,6 +3,15 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: .5rem;
+    background: #e0e2d5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #10375d;
+}
+
 body {
     background: #e0e2d5;
 }
@@ -22,14 +31,15 @@ body {
     margin-right: 1rem;
 }
 
+.menu-toggle:hover {
+    cursor: pointer;
+}
+
 .menu {
     display: none;
-    flex-direction: column;
     margin-bottom: 1rem;
-    align-self: flex-end;
-    align-items: flex-end;
     position: absolute;
-    right: 1.5rem;
+    right: 1rem;
     min-width: 30%;
     background-color: #e0e2d5;
     border: solid #10375d 2px;
@@ -38,8 +48,11 @@ body {
 
 .menu-item {
     color: #10375d;
-    margin: .5rem;
     font-size: 1.25rem;
+}
+
+li:not(:last-child) {
+    margin-bottom: .5rem;
 }
 
 .wrapper {
@@ -217,12 +230,22 @@ h3{
         display: none;
     }
 
-    #menu {
+    ul {
         display: flex;
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
         flex-direction: row;
         justify-content: space-around;
+        list-style: none;
+        
+    }
+
+    .menu {
+        display: flex;
+        min-width: 40%;
         font-size: 2rem;
-        top: 2rem;
+        top: 1rem;
         border: none;
     }
 
@@ -254,11 +277,20 @@ h3{
         margin: 1.5rem;
         height: 80vh;
         overflow-y: scroll;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+        scrollbar-width: thin;
+        scrollbar-color: #10375d #e0e2d5;
     }
 
     .info-block::-webkit-scrollbar {
+        width: .25rem;
+        margin-right: 0;
+    }
+
+    #contact {
+        scrollbar-width: none;
+    }
+
+    #contact::-webkit-scrollbar {
         display: none;
     }
 }
