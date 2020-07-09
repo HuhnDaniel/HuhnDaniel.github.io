@@ -19,6 +19,6 @@ No contributions will be accepted at this time
 ## Author
 Daniel Moody-Huhn:
 - https://github.com/HuhnDaniel/
-- https://huhndaniel.github.io/
+- https://danielmoodyhuhn.herokuapp.com/
 ## Questions
-If you have any questions, please open an issue or contact me through my huhndaniel.github.io site.
+If you have any questions, please open an issue or contact me through my danielmoodyhuhn.herokuapp.com site.
