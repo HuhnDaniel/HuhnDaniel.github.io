@@ -1,4 +1,4 @@
-# React Portfolio
+# Daniel Moody-Huhn
 ![GitHub repo size](https://img.shields.io/github/repo-size/HuhnDaniel/react-portfolio) ![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)  
 Personalized bio, images, and links about myself.
 ## Table of Contents

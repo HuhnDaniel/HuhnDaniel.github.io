@@ -5,13 +5,13 @@ function Navigation() {
     return (
         <ul className="flex-auto flex flex-row">
             <li className="flex-auto text-center text-2xl p-4">
-                <Link to="/react-portfolio/">About</Link>
+                <Link to="/">About</Link>
             </li>
             <li className="flex-auto text-center text-2xl p-4">
-                <Link to="/react-portfolio/portfolio">Portfolio</Link>
+                <Link to="/portfolio">Portfolio</Link>
             </li>
             <li className="flex-auto text-center text-2xl p-4">
-                <Link to="/react-portfolio/contact">Contact</Link>
+                <Link to="/contact">Contact</Link>
             </li>
         </ul>
     )

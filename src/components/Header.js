@@ -26,7 +26,7 @@ class Header extends Component {
         return (
             <header className="bg-navyBlue text-warmYellow">
                 <div className="flex flex-row">
-                    <Link className="flex-auto text-center text-3xl p-4" to="/react-portfolio/">Daniel Moody-Huhn</Link>
+                    <Link className="flex-auto text-center text-3xl p-4" to="/">Daniel Moody-Huhn</Link>
                     <Navicon handleMenuToggle={this.handleMenuToggle} menuToggle={this.state.menuToggle} />
                 </div>
                 <div className={`${this.state.menuToggle} md:hidden`} id="mobile-menu">
