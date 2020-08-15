@@ -1,148 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-	<title>Daniel Moody-Huhn</title>
-</head>
-<body>
-    <header class="head">
-        <h1 class="title">Daniel Moody-Huhn</h1>
-        <h1 class="menu-toggle" data-status="closed">☰</h1>
-    </header>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-    <nav class="menu" id="menu">
-        <ul>
-        <li><a href="#about" class="menu-item">About</a></li>
-        <li><a href="#portfolio" class="menu-item">Portfolio</a></li>
-        <li><a href="#contact" class="menu-item">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main class="wrapper">
-        <section class="info-block" id="about">
-            <h2><a href="#about" class="info-head">About Me</a></h2>
-            <hr />
-
-            <figure>
-                <img src="assets/images/profilepic2.jpg" class="profile-pic" alt="Profile picture">
-            </figure>
-
-            <p class="info-text">
-                As a full-stack web developer, I use experience with multiple technologies to create
-                intentional and engaging sites and applications.  Previous experience in leadership
-                roles provides me with strong teamwork and communication skills necessary for working
-                well in a group.  I pride myself in my sense of initiative for learning, my work eithic,
-                and my ability to finish projects on time.
-            </p>
-            <hr />
-            
-            <h3>My resume</h3>
-            <article class="resume-buttons">
-                <a href="https://docs.google.com/document/d/1FAhLfMIWzPaPbqHQfpG83LzAm3j4BUq4rOgi8BgQ1lo/edit?usp=sharing" target="_blank" class="btn-container">
-                    <div class="actionBtn" id="resume-linkBtn">View</div>
-                </a>
-                <a href="https://docs.google.com/document/d/1FAhLfMIWzPaPbqHQfpG83LzAm3j4BUq4rOgi8BgQ1lo/export?format=doc"class="btn-container">
-                    <div class="actionBtn" id="resume-downloadBtn">Download</div>
-                </a>
-            </article>
-        </section>
-
-        <section class="info-block" id="portfolio">
-            <h2><a href="#portfolio" class="info-head">Portfolio</a></h2>
-            <hr />
-
-            <article class="project">
-                <h3>Campsite Finder</h3>
-                <figure>
-                    <a class="project-link" href="https://huhndaniel.github.io/campsite-finder/" target="_blank">
-                        <img class="project-logo" data-project="campsite-finder" src="assets/images/campsite-finder-logo.png" alt="Campsite Finder link" />
-                    </a>
-                </figure>
-
-                <a href="https://github.com/HuhnDaniel/campsite-finder/tree/master" class="project-text" target="_blank">View on Github.</a>
-            </article>
-            <hr />
-
-            <article class="project">
-                <h3>Project Boolean</h3>
-                <figure>
-                    <a class="project-link" href="https://project-boolean.herokuapp.com/" target="_blank">
-                        <img class="project-logo" data-project="project-boolean" src="assets/images/project-boolean-logo.png" alt="Project Boolean link" />
-                    </a>
-                </figure>
-
-                <a href="https://github.com/HuhnDaniel/campsite-finder/tree/master" class="project-text" target="_blank">View on Github.</a></p>
-            </article>
-            <hr />
-
-            <article class="project">
-                <h3>Weather Dashboard</h3>
-                <figure>
-                    <a class="project-link" href="https://huhndaniel.github.io/weather-dashboard/" target="_blank">
-                        <img class="project-logo" data-project="weather-dashboard" src="assets/images/weather-dashboard-logo.png" alt="Weather Dashboard link" />
-                    </a>
-                </figure>
-
-                <a href="https://github.com/HuhnDaniel/weather-dashboard" class="project-text" target="_blank">View on Github.</a></p>
-            </article>
-            <hr />
-            
-            <article class="project">
-                <h3>Burger</h3>
-                <figure>
-                    <a class="project-link" href="https://secure-plateau-75808.herokuapp.com/" target="_blank">
-                        <img class="project-logo" data-project="burgers" src="assets/images/burgers-logo.png" alt="Burgers link" />
-                    </a>
-                </figure>
-
-                <a href="https://github.com/HuhnDaniel/burger" class="project-text" target="_blank">View on Github.</a></p>
-            </article>
-        </section>
-
-        <section class="info-block" id="contact">
-            <h2><a href="#contact" class="info-head">Contact Me</a></h2>
-            <hr />
-
-            <h3>Find me on</h3>
-            <article class="resources">
-                <a href="https://www.linkedin.com/in/danielmoody-huhn/" target="_blank" class="resource-link">
-                    <img class="resource-logo" id="linkedin-logo" src="assets/images/LI-Logo.png" alt="Linkedn link" />
-                </a>
-                <a href="https://github.com/HuhnDaniel" target="_blank" class="resource-link">
-                    <img class="resource-logo" id="github-logo" src="assets/images/GitHub_Logo.png" alt="GitHub link" />
-                </a>
-            </article>
-            <hr />
-
-            <h3>Email me </h3>
-            <p class="email-link">At <a href="mailto:danielphuhn@gmail.com">danielphuhn@gmail.com</a></p>
-            <!-- <hr />
-
-            <h3>Message me directly</h3>
-            <form class="contact-form">
-                <div class="inputs">
-                    <label for="name-input" class="input-label">Name</label>
-                    <input type="text" class="contact-text" id="name-input" placeholder="John Smith" />
-                        
-                    <label for="email-input" class="input-label">Email</label>
-                    <input type="email" class="contact-text" id="email-input" placeholder="example@gmail.com"/>
-                        
-                    <label for="topic-input" class="input-label">Topic</label>
-                    <input type="text" class="contact-text" id="topic-input">
-                        
-                    <label for="message-input" class="input-label">Message</label>
-                    <textarea class="contact-text" id="message-input" rows="5"></textarea>
-                </div>
-                    
-                <button type="submit" class="actionBtn" id="submitBtn">Submit</button>
-            </form> -->
-        </section>
-    </main>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Daniel Moody-Huhn</title>
+  </head>
+  <body class="bg-gunmetal text-white">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>
