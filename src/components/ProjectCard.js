@@ -1,17 +1,14 @@
 import React from "react";
 
-function ProjectCard({ name, deploy, github, logo }) {
+function ProjectCard({ project, toggleOverlay }) {
+    console.log(project);
     return (
-        <article className="bg-navyBlue rounded-md mx-auto my-4 p-4 h-80 w-80 hover:shadow-md transition transition-transform duration-200 transform hover:scale-105">
-            <h3 className="text-xl pb-4">{name}</h3>
+        <article id={project.id} className="bg-navyBlue rounded-md cursor-pointer mx-auto my-4 p-4 h-80 w-80 hover:shadow-md transition transition-transform duration-200 transform hover:scale-105" onClick={toggleOverlay.bind(this)}>
+            <h3 className="text-xl pb-4">{project.name}</h3>
 
             <figure className="flex items-center mx-auto align-middle h-48 w-48">
-                {/* <a href={deploy} target="_blank" rel="noopener noreferrer"> */}
-                    <img className="w-48" data-project={name} src={logo} alt="Project Boolean link" />
-                {/* </a> */}
+                <img className="w-48" data-project={project.name} src={project.logo} alt={`${project.name} Logo`} />
             </figure>
-
-            {/* <p className="text-right mt-2"><a href={github} className="text-blue-500" target="_blank" rel="noopener noreferrer">View on Github.</a></p> */}
         </article>
     );
 }
