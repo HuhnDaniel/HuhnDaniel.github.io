@@ -3,6 +3,7 @@ import campsiteFinderLogo from "../assets/images/campsite-finder-logo.png";
 import projectBooleanLogo from "../assets/images/project-boolean-logo.png";
 import inQuireLogo from "../assets/images/inquire-logo.png";
 import ProjectCard from "../components/ProjectCard";
+import ProjectOverlay from "../components/ProjectOverlay";
 
 function Portfolio() {
     return(
@@ -14,6 +15,8 @@ function Portfolio() {
                 <ProjectCard name="Project Boolean" deploy="https://project-boolean.herokuapp.com/" github="https://github.com/HuhnDaniel/project-boolean/tree/master" logo={projectBooleanLogo} />
                 <ProjectCard name="Campsite Finder" deploy="https://huhndaniel.github.io/campsite-finder/" github="https://github.com/HuhnDaniel/campsite-finder/tree/master" logo={campsiteFinderLogo} />
             </div>
+
+            <ProjectOverlay />
         </main>
     );
 }
