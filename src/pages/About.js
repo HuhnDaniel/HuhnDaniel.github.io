@@ -1,11 +1,7 @@
 import React from "react";
 import Button from "../components/Button";
 import profilePic from "../assets/images/profilepic.jpg";
-
-const resume = {
-    view: "https://docs.google.com/document/d/1FAhLfMIWzPaPbqHQfpG83LzAm3j4BUq4rOgi8BgQ1lo/edit?usp=sharing",
-    download: "https://docs.google.com/document/d/1FAhLfMIWzPaPbqHQfpG83LzAm3j4BUq4rOgi8BgQ1lo/export?format=doc"
-}
+import resume from "../assets/data/resume";
 
 function About() {
     return(

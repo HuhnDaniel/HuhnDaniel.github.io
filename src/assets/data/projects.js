@@ -1,6 +1,6 @@
-import campsiteFinderLogo from "./images/campsite-finder-logo.png";
-import projectBooleanLogo from "./images/project-boolean-logo.png";
-import inQuireLogo from "./images/inquire-logo.png";
+import campsiteFinderLogo from "../images/campsite-finder-logo.png";
+import projectBooleanLogo from "../images/project-boolean-logo.png";
+import inQuireLogo from "../images/inquire-logo.png";
 
 const projects = [
     {

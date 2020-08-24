@@ -1,36 +1,52 @@
-import React from "react";
-import campsiteFinderLogo from "../assets/images/campsite-finder-logo.png";
-import projectBooleanLogo from "../assets/images/project-boolean-logo.png";
-import inQuireLogo from "../assets/images/inquire-logo.png";
+import React, { Component } from "react";
 import ProjectCard from "../components/ProjectCard";
 import ProjectOverlay from "../components/ProjectOverlay";
-import projects from "../assets/projects";
+import projects from "../assets/data/projects";
 
-function Portfolio() {
-    function toggleOverlay(e) {
-        console.log(e.currentTarget.id);
+class Portfolio extends Component {
+    state = {
+        overlayProject: {},
+        visibility: "invisible"
     };
 
-    console.log(projects);
+    openOverlay = (e) => {
+        this.setState({
+            overlayProject: projects[e.currentTarget.id],
+            visibility: "visible"
+        });
+    };
 
-    return(
-        <main className="mx-auto my-4 w-5/6">
-            <h2 className="text-2xl py-2">Portfolio</h2>
+    closeOverlay = (e) => {
+        switch (e.target.id) {
+            case "margin":
+            case "close":
+                this.setState({
+                    overlayProject: {},
+                    visibility: "invisible"
+                });
+                break;
+            default:
+                break;
+        };
+    };
 
-            <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-                {projects.map((project, i) => {
-                    return (
-                        <ProjectCard project={project} toggleOverlay={toggleOverlay} key={i} />
-                    )
-                })}
-                {/* <ProjectCard name="InQuire" deploy="https://inquire-6846.herokuapp.com/" github="https://github.com/damianjuan/Project-3/tree/master" logo={inQuireLogo} toggleOverlay={toggleOverlay}/>
-                <ProjectCard name="Project Boolean" deploy="https://project-boolean.herokuapp.com/" github="https://github.com/HuhnDaniel/project-boolean/tree/master" logo={projectBooleanLogo} toggleOverlay={toggleOverlay}/>
-                <ProjectCard name="Campsite Finder" deploy="https://huhndaniel.github.io/campsite-finder/" github="https://github.com/HuhnDaniel/campsite-finder/tree/master" logo={campsiteFinderLogo} toggleOverlay={toggleOverlay}/> */}
-            </section>
+    render() {
+        return(
+            <main className="mx-auto my-4 w-5/6">
+                <h2 className="text-2xl py-2">Portfolio</h2>
 
-            <ProjectOverlay toggleOverlay={toggleOverlay} />
-        </main>
-    );
+                <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                    {projects.map(project => {
+                        return (
+                            <ProjectCard project={project} openOverlay={this.openOverlay} key={project.id} />
+                        )
+                    })}
+                </section>
+
+                <ProjectOverlay visibility={this.state.visibility} project={this.state.overlayProject} closeOverlay={this.closeOverlay} />
+            </main>
+        );
+    };
 }
 
 export default Portfolio;
