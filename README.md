@@ -30,5 +30,5 @@ This is my personal page which directs visitors to my resume, projects, and prof
 No contributions will be accepted at this time
 ## Author
 Daniel Moody-Huhn  
-  -https://github.com/HuhnDaniel  
-  -https://huhndaniel.github.io
+  - https://github.com/HuhnDaniel  
+  - https://huhndaniel.github.io

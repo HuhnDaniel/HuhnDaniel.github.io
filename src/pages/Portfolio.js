@@ -6,7 +6,8 @@ import projects from "../assets/data/projects";
 class Portfolio extends Component {
     state = {
         overlayProject: {},
-        visibility: "invisible"
+        visibility: "invisible",
+        carouselSlide: 0
     };
 
     openOverlay = (e) => {
@@ -16,13 +17,30 @@ class Portfolio extends Component {
         });
     };
 
-    closeOverlay = (e) => {
+    manipulateOverlay = (e) => {
+        console.log(e.target.id);
         switch (e.target.id) {
             case "margin":
             case "close":
                 this.setState({
                     overlayProject: {},
-                    visibility: "invisible"
+                    visibility: "invisible",
+                    carouselSlide: 0
+                });
+                break;
+            case "forward":
+                this.setState({
+                    carouselSlide: this.state.carouselSlide === (this.state.overlayProject.screenshots.length - 1) ? 0 : (this.state.carouselSlide + 1)
+                });
+                break;
+            case "back":
+                this.setState({
+                    carouselSlide: this.state.carouselSlide === 0 ? (this.state.overlayProject.screenshots.length - 1) : (this.state.carouselSlide - 1)
+                });
+                break;
+            case "imageNumber":
+                this.setState({
+                    carouselSlide: parseInt(e.target.name)
                 });
                 break;
             default:
@@ -43,7 +61,7 @@ class Portfolio extends Component {
                     })}
                 </section>
 
-                <ProjectOverlay visibility={this.state.visibility} project={this.state.overlayProject} closeOverlay={this.closeOverlay} />
+                <ProjectOverlay state={this.state} manipulateOverlay={this.manipulateOverlay} />
             </main>
         );
     };
