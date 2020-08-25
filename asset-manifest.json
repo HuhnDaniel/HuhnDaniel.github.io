@@ -1,27 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b229344.chunk.css",
-    "main.js": "/static/js/main.e7bedb40.chunk.js",
-    "main.js.map": "/static/js/main.e7bedb40.chunk.js.map",
+    "main.css": "/static/css/main.24c0cdd9.chunk.css",
+    "main.js": "/static/js/main.d6b12503.chunk.js",
+    "main.js.map": "/static/js/main.d6b12503.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e312f208.js",
     "runtime-main.js.map": "/static/js/runtime-main.e312f208.js.map",
-    "static/js/2.890a4d40.chunk.js": "/static/js/2.890a4d40.chunk.js",
-    "static/js/2.890a4d40.chunk.js.map": "/static/js/2.890a4d40.chunk.js.map",
+    "static/js/2.fe6e9e27.chunk.js": "/static/js/2.fe6e9e27.chunk.js",
+    "static/js/2.fe6e9e27.chunk.js.map": "/static/js/2.fe6e9e27.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.980a098e087000754508dc1ed500d985.js": "/precache-manifest.980a098e087000754508dc1ed500d985.js",
+    "precache-manifest.3d9bffc2cb261b017efdc299e347c5b5.js": "/precache-manifest.3d9bffc2cb261b017efdc299e347c5b5.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8b229344.chunk.css.map": "/static/css/main.8b229344.chunk.css.map",
-    "static/js/2.890a4d40.chunk.js.LICENSE.txt": "/static/js/2.890a4d40.chunk.js.LICENSE.txt",
+    "static/css/main.24c0cdd9.chunk.css.map": "/static/css/main.24c0cdd9.chunk.css.map",
+    "static/js/2.fe6e9e27.chunk.js.LICENSE.txt": "/static/js/2.fe6e9e27.chunk.js.LICENSE.txt",
     "static/media/GitHub_Logo.png": "/static/media/GitHub_Logo.064ace47.png",
     "static/media/LI-Logo.png": "/static/media/LI-Logo.c24cde28.png",
     "static/media/campsite-finder-logo.png": "/static/media/campsite-finder-logo.208bfabf.png",
+    "static/media/campsite-finder-screenshot-1.png": "/static/media/campsite-finder-screenshot-1.79b5b927.png",
+    "static/media/campsite-finder-screenshot-2.png": "/static/media/campsite-finder-screenshot-2.cc9bb9b1.png",
+    "static/media/campsite-finder-screenshot-3.png": "/static/media/campsite-finder-screenshot-3.d485f318.png",
+    "static/media/inquire-logo.png": "/static/media/inquire-logo.e36abbfb.png",
+    "static/media/inquire-screenshot-1.png": "/static/media/inquire-screenshot-1.1a3d64bc.png",
+    "static/media/inquire-screenshot-2.png": "/static/media/inquire-screenshot-2.18fa4b5e.png",
+    "static/media/inquire-screenshot-3.png": "/static/media/inquire-screenshot-3.d3c64355.png",
     "static/media/profilepic.jpg": "/static/media/profilepic.2eb05cd7.jpg",
-    "static/media/project-boolean-logo.png": "/static/media/project-boolean-logo.0dce6994.png"
+    "static/media/project-boolean-logo.png": "/static/media/project-boolean-logo.0dce6994.png",
+    "static/media/project-boolean-screenshot-1.png": "/static/media/project-boolean-screenshot-1.f5e10f14.png",
+    "static/media/project-boolean-screenshot-2.png": "/static/media/project-boolean-screenshot-2.28326fde.png",
+    "static/media/project-boolean-screenshot-3.png": "/static/media/project-boolean-screenshot-3.3c50d166.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e312f208.js",
-    "static/js/2.890a4d40.chunk.js",
-    "static/css/main.8b229344.chunk.css",
-    "static/js/main.e7bedb40.chunk.js"
+    "static/js/2.fe6e9e27.chunk.js",
+    "static/css/main.24c0cdd9.chunk.css",
+    "static/js/main.d6b12503.chunk.js"
   ]
 }
