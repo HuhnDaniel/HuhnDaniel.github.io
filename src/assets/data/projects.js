@@ -22,7 +22,12 @@ const projects = [
             inQuireImage1,
             inQuireImage2,
             inQuireImage3
-        ]
+        ],
+        description:
+            `Create a wide variety of surveys from free response to multiple choice.  Copy the survey link to send it to others,
+            and view the results with graphical representations of the responses.  This web application was designed with safety and security in
+            mind, so it is not required to log in to take surveys, and no personal data is ever saved by the site.`,
+        technologies: "Technologies used: HTML, SASS, JavaScript, Git/GitHub"
     },
     {
         id: 1,
@@ -34,19 +39,26 @@ const projects = [
             projectBooleanImage1,
             projectBooleanImage2,
             projectBooleanImage3
-        ]
+        ],
+        description:
+            `Create a form consisting of true and false questions to send to others, then view the results to see the numerical totals of each response.`,
+        technologies: "Technologies used: HTML, CSS, JavaScript, NodeJS, Bootstrap, Heroku, JawsDB, Git/GitHub"
     },
     {
         id: 2,
         name: "Campsite Finder",
-        deploy: "https://github.com/HuhnDaniel/campsite-finder/tree/master",
-        github: "https://huhndaniel.github.io/campsite-finder/",
+        deploy: "https://huhndaniel.github.io/campsite-finder/",
+        github: "https://github.com/HuhnDaniel/campsite-finder/tree/master",
         logo: campsiteFinderLogo,
         screenshots: [
             campsiteFinderImage1,
             campsiteFinderImage2,
             campsiteFinderImage3
-        ]
+        ],
+        description: 
+            `Use this web based application to find campsites near you, search by city name, search by state, or search for a campsite by name.
+            You will be provided with a list of campsites based on your parameters, which you can select from to see site details.`,
+        technologies: "Technologies used: HTML, TailwindCSS, JavaScript, MERN Stack, Heroku, JawsDB, Git/GitHub"
     }
 ]
 
