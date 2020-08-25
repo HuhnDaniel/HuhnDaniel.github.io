@@ -9,7 +9,7 @@ Personalized bio, images, and links about myself.
 - [Contributing](#contributing)
 - [Author](#author)
 ## Deployed Application
-Coming Soon
+Deployed at https://huhndaniel.github.io
 ## Installation and Running
 To install necessary dependencies, run the following command in the root folder of this application
 ```
@@ -30,5 +30,5 @@ This is my personal page which directs visitors to my resume, projects, and prof
 No contributions will be accepted at this time
 ## Author
 Daniel Moody-Huhn  
-  -https://github.com/HuhnDaniel  
-  -https://danielmoodyhuhn.herokuapp.com
+  - https://github.com/HuhnDaniel  
+  - https://huhndaniel.github.io
