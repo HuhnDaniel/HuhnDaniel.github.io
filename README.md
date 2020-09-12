@@ -6,6 +6,7 @@ Personalized bio, images, and links about myself.
 - [Installation and Running](#installation-and-running)
 - [Technologies](#technologies)
 - [Usage](#usage)
+- [License](#license)
 - [Contributing](#contributing)
 - [Author](#author)
 ## Deployed Application
@@ -26,6 +27,8 @@ npm start
 - Tailwindcss https://tailwindcss.com/
 ## Usage
 This is my personal page which directs visitors to my resume, projects, and professional social media.
+## License
+This project uses the MIT license. 
 ## Contributing
 No contributions will be accepted at this time
 ## Author
