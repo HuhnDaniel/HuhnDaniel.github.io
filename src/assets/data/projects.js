@@ -15,8 +15,8 @@ const projects = [
     {
         id: 0,
         name: "InQuire",
-        deploy: "https://inquire-6846.herokuapp.com/",
-        github: "https://github.com/damianjuan/Project-3/tree/master",
+        deploy: "https://inquiresurveys.herokuapp.com/home",
+        github: "https://github.com/HuhnDaniel/InQuire/tree/master",
         logo: inQuireLogo,
         screenshots: [
             inQuireImage1,
@@ -27,7 +27,7 @@ const projects = [
             `Create a wide variety of surveys from free response to multiple choice.  Copy the survey link to send it to others,
             and view the results with graphical representations of the responses.  This web application was designed with safety and security in
             mind, so it is not required to log in to take surveys, and no personal data is ever saved by the site.`,
-        technologies: "Technologies used: HTML, SASS, JavaScript, Git/GitHub"
+        technologies: "Technologies used: HTML, TailwindCSS, JavaScript, SERN Stack, Heroku, JawsDB, Git/GitHub"
     },
     {
         id: 1,
@@ -58,7 +58,7 @@ const projects = [
         description: 
             `Use this web based application to find campsites near you, search by city name, search by state, or search for a campsite by name.
             You will be provided with a list of campsites based on your parameters, which you can select from to see site details.`,
-        technologies: "Technologies used: HTML, TailwindCSS, JavaScript, MERN Stack, Heroku, JawsDB, Git/GitHub"
+        technologies: "Technologies used: HTML, SASS, JavaScript, Git/GitHub"
     }
 ]
 
