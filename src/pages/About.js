@@ -5,7 +5,7 @@ import resume from "../assets/data/resume";
 
 function About() {
     return(
-        <main className="mx-auto my-4 w-5/6 sm:w-2/3 md:w-1/2 lg:w-1/3">
+        <main className="mx-auto my-4 w-5/6 sm:w-2/3 md:w-1/2 lg:w-1/3 pb-12">
             <h2 className="text-2xl py-2">About Me</h2>
             
             <img src={profilePic} className="w-64 my-4 mx-auto shadow-md" alt="Profile" />
