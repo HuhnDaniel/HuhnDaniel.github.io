@@ -50,7 +50,7 @@ class Portfolio extends Component {
 
     render() {
         return(
-            <main className="mx-auto my-4 w-5/6">
+            <main className="mx-auto my-4 w-5/6 pb-12">
                 <h2 className="text-2xl py-2">Portfolio</h2>
 
                 <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
